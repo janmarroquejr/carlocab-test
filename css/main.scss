@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
 
 *,
 *::after,
@@ -17,11 +18,23 @@ button {
 
 .container {
   max-width: 65%;
+  width: 95%;
   margin: auto;
 }
 
 .nav {
   background-color: #131313;
+
+  .burger {
+    display: none;
+
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+    }
+  }
 
   .nav-container {
     display: flex;
@@ -160,6 +173,7 @@ button {
   .service-text {
     font-size: 1rem;
     color: #9a9a9a;
+    padding-right: 1rem;
   }
 
   .text-left {
@@ -179,12 +193,11 @@ button {
   background-color: #dde5e5;
   padding: 3rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
 
   .contact-header {
     font-size: 2.4rem;
     margin-top: -2rem;
+    margin-bottom: 1rem;
   }
 
   .contact-message {
@@ -200,13 +213,15 @@ button {
     padding: 4rem;
     flex: 50%;
     margin-left: 0.5rem;
+    height: 100%;
   }
 
   .form-header {
     text-align: center;
     color: #9a9a9a;
     font-size: 2rem;
-    margin: 0;
+    margin-bottom: 2rem;
+    font-family: "Libre Baskerville", serif;
   }
 
   .form-input {
@@ -217,8 +232,8 @@ button {
   }
 
   label {
-    margin-bottom: 0.4rem;
     display: inline-block;
+    margin-bottom: 0.4rem;
   }
 
   .phone-number {
@@ -240,7 +255,48 @@ button {
 
   button {
     margin-top: 1.5rem;
-    padding: 1.3rem 4rem;
-    background-color: #fff;
+    padding: 1.2rem 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+  }
+}
+
+footer {
+  background-color: #131313;
+  height: 177px;
+
+  .footer {
+    height: 177px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    font-family: "Times New Roman", Times, serif;
+    color: #777777;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: none;
+      color: #777777;
+    }
+  }
+
+  .information {
+    font-family: "Times New Roman", Times, serif;
+    color: #777777;
+    font-size: 0.8rem;
+    margin-right: 0;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1324px) {
+  body {
+    display: none;
   }
 }

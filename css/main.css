@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
 *,
 *::after,
 *::before {
@@ -17,11 +18,23 @@ button {
 
 .container {
   max-width: 65%;
+  width: 95%;
   margin: auto;
 }
 
 .nav {
   background-color: #131313;
+}
+
+.nav .burger {
+  display: none;
+}
+
+.nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
 }
 
 .nav .nav-container {
@@ -189,6 +202,7 @@ button {
 .two-column .service-text {
   font-size: 1rem;
   color: #9a9a9a;
+  padding-right: 1rem;
 }
 
 .two-column .text-left {
@@ -209,17 +223,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .contact-wrapper .contact-header {
   font-size: 2.4rem;
   margin-top: -2rem;
+  margin-bottom: 1rem;
 }
 
 .contact-wrapper .contact-message {
@@ -239,13 +248,15 @@ button {
       -ms-flex: 50%;
           flex: 50%;
   margin-left: 0.5rem;
+  height: 100%;
 }
 
 .contact-wrapper .form-header {
   text-align: center;
   color: #9a9a9a;
   font-size: 2rem;
-  margin: 0;
+  margin-bottom: 2rem;
+  font-family: "Libre Baskerville", serif;
 }
 
 .contact-wrapper .form-input {
@@ -256,8 +267,8 @@ button {
 }
 
 .contact-wrapper label {
-  margin-bottom: 0.4rem;
   display: inline-block;
+  margin-bottom: 0.4rem;
 }
 
 .contact-wrapper .phone-number {
@@ -281,7 +292,54 @@ button {
 
 .contact-wrapper button {
   margin-top: 1.5rem;
-  padding: 1.3rem 4rem;
-  background-color: #fff;
+  padding: 1.2rem 5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+footer {
+  background-color: #131313;
+  height: 177px;
+}
+
+footer .footer {
+  height: 177px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  font-family: "Times New Roman", Times, serif;
+  color: #777777;
+  font-size: 0.8rem;
+}
+
+footer .copyright a {
+  text-decoration: none;
+  color: #777777;
+}
+
+footer .information {
+  font-family: "Times New Roman", Times, serif;
+  color: #777777;
+  font-size: 0.8rem;
+  margin-right: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 1324px) {
+  body {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

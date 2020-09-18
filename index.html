@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/72d0d6bced.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Online Exam for Carl Ocab | by Janmar Roque</title>
   </head>
   <body>
@@ -19,10 +20,10 @@
           <img class="logo-img" src="./images/logo.png" alt="logo" />
         </div>
 
-        <ul>
+        <ul class="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#services">Services</a></li>
           <li>
             <i class="fab fa-facebook-f"></i>
@@ -30,6 +31,11 @@
             <i class="fab fa-youtube"></i>
           </li>
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </div>
     </nav>
 
@@ -40,7 +46,7 @@
           Vestibulum tortor metus, eleifend vel dui vel, pharetra elementum dui.
         </p>
       </div>
-      <button>CONTACT</button>
+      <button onclick="window.location.href='#contact'">CONTACT</button>
     </div>
 
     <main>
@@ -82,7 +88,7 @@
           </div>
 
           <div class="text-right">
-            <p class="service-header">Aint it?</p>
+            <p class="service-header">Ain't it?</p>
             <p class="service-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo neque autem eveniet labore repellendus commodi placeat,
@@ -104,7 +110,7 @@
         <div class="container">
           <div class="contact-wrapper">
             <div class="contact-message">
-              <p class="contact-header">This is wrapped</p>
+              <p class="contact-header">This is wrapped.</p>
 
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -163,6 +169,25 @@
           </div>
         </div>
       </section>
+
+      <footer>
+        <div class="container footer">
+          <div class="copyright">
+            <img src="./images/footer.png" alt="" />
+            <p>
+              Copyright &copy; 2017 Carl Ocab Marketing Services •
+              <a href="#">Privacy Policy</a> • <a href="#contact">Contact Us</a>
+            </p>
+          </div>
+          <div class="information">
+            <p>
+              5 La Carlota St., Alabang Hills Village, Cupang, Muntinlupa 1771,
+              Metro Manila, Philippines
+            </p>
+            <p>US: +1(800)765-2158 • Philippines: +63(917)833-960</p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
