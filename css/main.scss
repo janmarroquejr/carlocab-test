@@ -99,7 +99,7 @@ button {
   align-items: center;
   text-align: center;
   background-image: url("../images/hero.png");
-  background-size: cover;
+  // background-size: cover;
 
   .hero-text {
     margin-top: 16rem;
@@ -107,7 +107,7 @@ button {
 
   .hero-header {
     font-size: 3.2rem;
-    font-size: clamp(1.2rem, calc(5vw + 1rem), 3.2rem);
+    font-size: clamp(1.2rem, 8rem, 3.2rem);
     margin: 0;
   }
 
@@ -144,6 +144,7 @@ button {
   min-height: 320px;
   width: 60%;
   line-height: 1.6;
+  margin: 1rem auto;
 
   .slice-header {
     font-size: 2.4rem;
@@ -180,6 +181,11 @@ button {
 
   .text-left {
     margin-right: 1.5rem;
+    flex: 1;
+  }
+
+  .text-right {
+    flex: 1;
   }
 }
 
@@ -294,6 +300,31 @@ footer {
     font-size: 0.8rem;
     margin-right: 0;
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .two-column {
+    flex-flow: column;
+  }
+
+  .text-left {
+    margin-bottom: 2rem;
+  }
+
+  .contact-wrapper {
+    flex-flow: column;
+  }
+
+  .footer {
+    flex-flow: column;
+    height: 100%;
+  }
+
+  .copyright,
+  .information {
+    margin: 0;
+    padding: 1rem;
   }
 }
 
