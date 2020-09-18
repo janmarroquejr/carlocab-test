@@ -3,34 +3,34 @@
 *,
 *::after,
 *::before {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body,
-html {
-  padding: 0;
-  margin: 0;
+html,
+button {
   font-family: "Montserrat", sans-serif;
 }
 
 .container {
-  max-width: 82%;
+  max-width: 65%;
   margin: auto;
-}
-
-header {
-  height: 100vh;
 }
 
 .nav {
   background-color: #131313;
-  height: 80px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
 
   .logo {
-    margin: auto;
     cursor: pointer;
 
     .logo-img {
@@ -41,42 +41,45 @@ header {
     }
   }
 
-  .links {
-    ul {
-      display: flex;
-      justify-content: space-around;
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      padding-bottom: 5px;
+
+      &:hover {
+        border-bottom: 1px solid white;
+        color: grey;
+      }
     }
 
-    li {
-      list-style: none;
-      margin-right: 65px;
-      text-transform: uppercase;
-      font-size: 12px;
+    i {
+      color: white;
+      padding: 0 5px;
+      font-size: 16px;
+      cursor: pointer;
 
-      a {
-        text-decoration: none;
-        color: #fff;
-        letter-spacing: 0.1rem;
-        font-weight: 500;
-        padding-bottom: 5px;
-
-        &:hover {
-          border-bottom: 1px solid white;
-        }
-      }
-
-      i {
-        color: white;
-        padding: 0 5px;
-        font-size: 16px;
-        cursor: pointer;
+      &:hover {
+        color: grey;
       }
     }
   }
 }
 
 .hero {
-  height: 92%;
+  height: 95vh;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -89,15 +92,155 @@ header {
   }
 
   .hero-header {
+    font-size: 3.2rem;
+    margin: 0;
+  }
+
+  .hero-caption {
+    font-size: 1.5rem;
+  }
+
+  button {
+    margin-top: 3rem;
+    border: none;
+    background-color: #131313;
+    color: white;
+    padding: 1.5rem 6rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #000;
+      color: white;
+    }
+  }
+}
+
+#about {
+  background-color: #fff;
+}
+
+.slice {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 320px;
+  width: 60%;
+  line-height: 1.6;
+
+  .slice-header {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .slice-text {
+    font-size: 1.1rem;
+  }
+}
+
+#services {
+  background-color: #131313;
+}
+
+.two-column {
+  display: flex;
+  color: white;
+  min-height: 320px;
+  line-height: 1.6;
+  padding: 2.4rem 0;
+
+  .service-header {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+
+  .service-text {
+    font-size: 1rem;
+    color: #9a9a9a;
+  }
+
+  .text-left {
+    margin-right: 1.5rem;
+  }
+}
+
+#contact {
+  background-color: #fff;
+  height: 100%;
+}
+
+.contact-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 100%;
+  background-color: #dde5e5;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .contact-header {
+    font-size: 2.4rem;
+    margin-top: -2rem;
+  }
+
+  .contact-message {
+    flex: 50%;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .contact-form {
+    background-color: #131313;
+    color: white;
+    padding: 4rem;
+    flex: 50%;
+    margin-left: 0.5rem;
+  }
+
+  .form-header {
+    text-align: center;
+    color: #9a9a9a;
     font-size: 2rem;
     margin: 0;
   }
 
-  button {
+  .form-input {
+    height: 50px;
+    margin-bottom: 2rem;
+    width: 100%;
     border: none;
-    background-color: #131313;
-    color: white;
-    padding: 0.5rem 2.5rem;
-    letter-spacing: ;
+  }
+
+  label {
+    margin-bottom: 0.4rem;
+    display: inline-block;
+  }
+
+  .phone-number {
+    display: flex;
+
+    .code {
+      width: 80px;
+      height: 50px;
+      margin-right: 0.7rem;
+      padding: 0.5rem;
+    }
+
+    .phone {
+      width: 100%;
+      height: 50px;
+      padding: 0.5rem;
+    }
+  }
+
+  button {
+    margin-top: 1.5rem;
+    padding: 1.3rem 4rem;
+    background-color: #fff;
   }
 }
