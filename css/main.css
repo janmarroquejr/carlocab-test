@@ -115,6 +115,7 @@ button {
           align-items: center;
   text-align: center;
   background-image: url("../images/hero.png");
+  background-size: cover;
 }
 
 .hero .hero-text {
@@ -123,7 +124,7 @@ button {
 
 .hero .hero-header {
   font-size: 3.2rem;
-  font-size: clamp(1.2rem, 8rem, 3.2rem);
+  font-size: 3.2rem;
   margin: 0;
 }
 
@@ -168,7 +169,6 @@ button {
   min-height: 320px;
   width: 60%;
   line-height: 1.6;
-  margin: 1rem auto;
 }
 
 .slice .slice-header {
@@ -347,12 +347,32 @@ footer .information {
   text-align: right;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 769px) {
+  .hero-header {
+    font-size: 5em;
+  }
+  .hero-text {
+    font-size: 0.5em;
+  }
+  .two-column {
+    margin: 2rem 0;
+    padding: 0;
+  }
+  footer .information {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container {
+    width: 100%;
+  }
   .two-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    padding: 3rem 0;
   }
   .text-left {
     margin-bottom: 2rem;
@@ -374,10 +394,14 @@ footer .information {
   .information {
     margin: 0;
     padding: 1rem;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 1324px) {
+@media (max-width: 1324px) {
+  .container {
+    max-width: 85%;
+  }
   body {
     overflow-x: hidden;
   }
